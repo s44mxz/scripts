@@ -1,0 +1,42 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("s44mxz Hub", "BloodTheme")
+
+--MAIN SCRIPTS
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewButton("s44mxz Teleporter", "An Item to teleport with", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/s44mxz/scripts/main/s44mxz%20tp%20tool"))()
+end)
+
+MainSection:NewButton("Infinite Yield", "A script to enable admin commands", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+MainSection:NewButton("s44mxz's ESP", "A script to see where all players are", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/s44mxz/scripts/main/s44%20ESP'))()
+end)
+
+
+--Local player
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("Walkspeed", "Adjust Your Speed", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewSlider("Jumppower", "Adjust Your Jumppower", 350, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+
+--Other
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Other")
+
+  OtherSection:NewButton("Chat spoofer", "A script to make the game talk for you", function()
+      loadstring(game:HttpGet(("https://raw.githubusercontent.com/s44mxz/scripts/main/Chat%20Spoofer"),true))()
+  end)
+
+
