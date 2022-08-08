@@ -4,7 +4,7 @@ local SubmitButton
 local UI =
     Material.Load(
         {
-            Title = "Chat Spoofer",
+            Title = "s44mxz's Chat Spoofer",
             Style = 2,
             SizeX = 400,
             SizeY = 220,
@@ -15,7 +15,7 @@ local UI =
 local Page =
     UI.New(
         {
-            Title = "Main"
+            Title = "From s44mxz Hub"
         }
     )
 
