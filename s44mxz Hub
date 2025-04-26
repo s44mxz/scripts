@@ -17,6 +17,9 @@ MainSection:NewButton("s44mxz's ESP", "A script to see where all players are", f
 loadstring(game:HttpGet('https://raw.githubusercontent.com/s44mxz/scripts/main/s44%20ESP'))()
 end)
 
+MainSection:NewButton("Voice Chat Unban", "Unban Voice Chat With this", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/s44mxz/scripts/refs/heads/main/Voice%20Chat%20Unban"))()
+end)
 
 --Local player
 local Player = Window:NewTab("Player")
